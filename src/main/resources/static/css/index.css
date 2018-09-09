@@ -1,0 +1,36 @@
+body{
+    width: 100%;
+    height: auto;
+    list-style:none;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+}
+.img{
+    width: 101px;
+    height: 21px;
+}
+
+div{
+    float: left;
+}
+
+a:link {color: blue; text-decoration:none;}
+a:active {color: red; }
+a:visited {color:purple;text-decoration:none;}
+a:hover {
+    color: #ffffff;
+    text-decoration:none;
+    background:red;
+    border-radius:5px 5px 5px 5px ;
+    border: 1px solid red;
+    padding:10px;
+    width:48px;
+}
+
+li{
+    width: 98%;
+    border: 1px solid white;
+    line-height: 35px;
+}

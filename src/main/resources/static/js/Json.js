@@ -24,21 +24,23 @@ $(function(){
             var URL,IMG,Topic,Source = null;
             var size = 0;
             for(var i in arr){
-                console.log(i)
-                size = arr[i].miniimg_size;
-                URL = arr[i].url;
-                Topic = arr[i].topic;
-                Source = arr[i].tpch;
-                var miniimg = eval(arr[i].miniimg);
-                var url = null;
-                for(var j in miniimg){
-                    IMG = miniimg[j].src;
-                    url = miniimg[j].url;
-                    console.log(IMG + url);
+                if(i < 3){
+                    console.log(i)
+                    size = arr[i].miniimg_size;
+                    URL = arr[i].url;
+                    Topic = arr[i].topic;
+                    Source = arr[i].tpch;
+                    var miniimg = eval(arr[i].miniimg);
+                    var url = null;
+                    var divData = null;
+                    IMG = miniimg[0].src;
+                    url = miniimg[0].url;
+                    divData = "<div class='firstData'><div><img class='miniImg' src='https://"+IMG+ "'></div><div class='topic'><a href='"+ url +"'>"+Topic+"</a></br><span class='newsType'>"+ Source +"</span></div></div></<br>";
+                    $("#frameOut").append(divData);
                 }
-
-                console.log(size,URL,Source,Topic);
+               // console.log(size,URL,Source,Topic);
             }
+
         }
 
         console.log(arr);

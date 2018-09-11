@@ -35,7 +35,7 @@ $(function(){
                     var divData = null;
                     IMG = miniimg[0].src;
                     url = miniimg[0].url;
-                    divData = "<div class='firstData'><div><img class='miniImg' src='https://"+IMG+ "'></div><div class='topic'><a href='"+ url +"'>"+Topic+"</a></br><span class='newsType'>"+ Source +"</span></div></div></<br>";
+                    divData = "<div class='firstData' onmouseover=this.style.backgroundColor='#F0F0F0' onmouseout=this.style.backgroundColor='#FFFFFF'><a href='"+ url +"'><div><img class='miniImg' src='https://"+IMG+ "'></div><div class='topic'>"+Topic+"</br><span class='newsType'>"+ Source +"</span></div></a></div></<br>";
                     $("#frameOut").append(divData);
                 }
                // console.log(size,URL,Source,Topic);

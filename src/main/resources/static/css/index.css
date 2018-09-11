@@ -22,11 +22,12 @@ a:visited {color:grey;text-decoration:none;}
 a:hover {
     color: red;
     text-decoration:none;
-    /*background:red;*/
+    background-color:gainsboro;
+    width:292px;
+    height: 59px;
     /*border-radius:5px 5px 5px 5px ;*/
     /*border: 1px solid red;*/
     /*padding:10px;*/
-    /*width:48px;*/
 }
 
 li{
@@ -42,7 +43,7 @@ li{
 }
 .firstData{
     border-bottom: 1px solid;
-    border-color: lightgrey;
+    border-color: #F0F0F0;
     padding-top: 10px;
     padding-bottom: 10px;
     float: left;
